@@ -7,11 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>686</width>
-    <height>217</height>
+    <height>353</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Send Coins</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qradialgradient(spread:repeat, cx:0.5, cy:0.5, radius:0.777, fx:0.5, fy:0.5, stop:0 rgba(0, 169, 255, 147), stop:0.497326 rgba(0, 0, 0, 147), stop:1 rgba(0, 169, 255, 147));</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -21,6 +24,10 @@
      </property>
      <item>
       <widget class="QLabel" name="labelTxComment">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+       </property>
        <property name="text">
         <string>Transaction &amp;comment: </string>
        </property>
@@ -40,12 +47,18 @@
        <property name="toolTip">
         <string>Enter a transaction comment  (MAX 256 Characters) (Note: this information is public)</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
       </widget>
      </item>
     </layout>
    </item>
    <item>
     <widget class="QScrollArea" name="scrollArea">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
@@ -55,20 +68,11 @@
         <x>0</x>
         <y>0</y>
         <width>666</width>
-        <height>145</height>
+        <height>280</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
+       <property name="margin">
         <number>0</number>
        </property>
        <item>
@@ -102,6 +106,10 @@
        <property name="toolTip">
         <string>Send to multiple recipients at once</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string>Add &amp;Recipient</string>
        </property>
@@ -125,6 +133,10 @@
        <property name="toolTip">
         <string>Remove all transaction fields</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string>Clear &amp;All</string>
        </property>
@@ -147,6 +159,10 @@
        </property>
        <item>
         <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+         </property>
          <property name="text">
           <string>Balance:</string>
          </property>
@@ -156,6 +172,11 @@
         <widget class="QLabel" name="labelBalance">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 255, 0);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(108, 108, 108);</string>
          </property>
          <property name="text">
           <string>123.456 BOC</string>
@@ -168,19 +189,6 @@
       </layout>
      </item>
      <item>
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
       <widget class="QPushButton" name="sendButton">
        <property name="minimumSize">
         <size>
@@ -190,6 +198,9 @@
        </property>
        <property name="toolTip">
         <string>Confirm the send action</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);</string>
        </property>
        <property name="text">
         <string>S&amp;end</string>

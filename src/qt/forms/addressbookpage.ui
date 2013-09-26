@@ -13,9 +13,15 @@
   <property name="windowTitle">
    <string>Address Book</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qradialgradient(spread:repeat, cx:0.5, cy:0.5, radius:0.777, fx:0.5, fy:0.5, stop:0 rgba(0, 169, 255, 147), stop:0.497326 rgba(0, 0, 0, 147), stop:1 rgba(0, 169, 255, 147));</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="labelExplanation">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(226, 226, 226);</string>
+     </property>
      <property name="text">
       <string>These are your Ocoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</string>
      </property>
@@ -34,6 +40,10 @@
      </property>
      <property name="toolTip">
       <string>Double-click to edit address or label</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 255, 0);
+background-color: rgb(84, 84, 84);</string>
      </property>
      <property name="tabKeyNavigation">
       <bool>false</bool>
@@ -62,6 +72,10 @@
        <property name="toolTip">
         <string>Create a new address</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string>&amp;New Address</string>
        </property>
@@ -76,6 +90,10 @@
        <property name="toolTip">
         <string>Copy the currently selected address to the system clipboard</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string>&amp;Copy Address</string>
        </property>
@@ -87,6 +105,10 @@
      </item>
      <item>
       <widget class="QPushButton" name="showQRCode">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string>Show &amp;QR Code</string>
        </property>
@@ -100,6 +122,10 @@
       <widget class="QPushButton" name="signMessage">
        <property name="toolTip">
         <string>Sign a message to prove you own a Ocoin address</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Sign &amp;Message</string>
@@ -115,6 +141,10 @@
        <property name="toolTip">
         <string>Verify a message to ensure it was signed with a specified Ocoin address</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
         <string>&amp;Verify Message</string>
        </property>
@@ -128,6 +158,10 @@
       <widget class="QPushButton" name="deleteButton">
        <property name="toolTip">
         <string>Delete the currently selected address from the list</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>&amp;Delete</string>
@@ -158,6 +192,10 @@
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(0, 255, 0);</string>
        </property>
        <property name="standardButtons">
         <set>QDialogButtonBox::Ok</set>

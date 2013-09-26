@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qradialgradient(spread:repeat, cx:0.5, cy:0.5, radius:0.777, fx:0.5, fy:0.5, stop:0 rgba(0, 169, 255, 147), stop:0.497326 rgba(0, 0, 0, 147), stop:1 rgba(0, 169, 255, 147));</string>
+  </property>
   <property name="frameShape">
    <enum>QFrame::StyledPanel</enum>
   </property>
@@ -25,6 +28,10 @@
    </property>
    <item row="5" column="0">
     <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>A&amp;mount:</string>
      </property>
@@ -38,6 +45,10 @@
    </item>
    <item row="3" column="0">
     <widget class="QLabel" name="label_2">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>Pay &amp;To:</string>
      </property>
@@ -50,7 +61,11 @@
     </widget>
    </item>
    <item row="5" column="1">
-    <widget class="OcoinAmountField" name="payAmount"/>
+    <widget class="OcoinAmountField" name="payAmount">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
    </item>
    <item row="4" column="1">
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -65,12 +80,19 @@
        <property name="toolTip">
         <string>Enter a label for this address to add it to your address book</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
       </widget>
      </item>
     </layout>
    </item>
    <item row="4" column="0">
     <widget class="QLabel" name="label_4">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(84, 84, 84);
+color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>&amp;Label:</string>
      </property>
@@ -92,6 +114,9 @@
        <property name="toolTip">
         <string>The address to send the payment to  (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
        <property name="maxLength">
         <number>34</number>
        </property>
@@ -101,6 +126,9 @@
       <widget class="QToolButton" name="addressBookButton">
        <property name="toolTip">
         <string>Choose address from address book</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);</string>
        </property>
        <property name="text">
         <string/>
@@ -119,6 +147,9 @@
        <property name="toolTip">
         <string>Paste address from clipboard</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -135,6 +166,9 @@
       <widget class="QToolButton" name="deleteButton">
        <property name="toolTip">
         <string>Remove this recipient</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 84, 84);</string>
        </property>
        <property name="text">
         <string/>
