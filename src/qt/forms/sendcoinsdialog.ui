@@ -7,14 +7,16 @@
     <x>0</x>
     <y>0</y>
     <width>686</width>
-    <height>353</height>
+    <height>217</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Send Coins</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qradialgradient(spread:repeat, cx:0.5, cy:0.5, radius:0.777, fx:0.5, fy:0.5, stop:0 rgba(0, 169, 255, 147), stop:0.497326 rgba(0, 0, 0, 147), stop:1 rgba(0, 169, 255, 147));</string>
+   <string notr="true">background-color: rgb(84, 84, 84);
+color: #FFF;
+border-color: rgb(255, 255, 255) 2px;</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -24,10 +26,6 @@
      </property>
      <item>
       <widget class="QLabel" name="labelTxComment">
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 0, 0);</string>
-       </property>
        <property name="text">
         <string>Transaction &amp;comment: </string>
        </property>
@@ -47,9 +45,6 @@ background-color: rgb(0, 0, 0);</string>
        <property name="toolTip">
         <string>Enter a transaction comment  (MAX 256 Characters) (Note: this information is public)</string>
        </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(255, 255, 255);</string>
-       </property>
       </widget>
      </item>
     </layout>
@@ -57,7 +52,9 @@ background-color: rgb(0, 0, 0);</string>
    <item>
     <widget class="QScrollArea" name="scrollArea">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: #FFF;
+color: #000;
+border-color: #dadada 2px solid;</string>
      </property>
      <property name="widgetResizable">
       <bool>true</bool>
@@ -68,7 +65,7 @@ background-color: rgb(0, 0, 0);</string>
         <x>0</x>
         <y>0</y>
         <width>666</width>
-        <height>280</height>
+        <height>144</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -108,13 +105,14 @@ background-color: rgb(0, 0, 0);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(84, 84, 84);
-color: rgb(255, 255, 255);</string>
+color: #FFF;
+border-color: rgb(255, 255, 255) 2px;</string>
        </property>
        <property name="text">
         <string>Add &amp;Recipient</string>
        </property>
        <property name="icon">
-        <iconset resource="../Ocoin.qrc">
+        <iconset resource="../BountyCoin.qrc">
          <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
        <property name="autoDefault">
@@ -135,13 +133,14 @@ color: rgb(255, 255, 255);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(84, 84, 84);
-color: rgb(255, 255, 255);</string>
+color: #FFF;
+border-color: rgb(255, 255, 255) 2px;</string>
        </property>
        <property name="text">
         <string>Clear &amp;All</string>
        </property>
        <property name="icon">
-        <iconset resource="../Ocoin.qrc">
+        <iconset resource="../BountyCoin.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
        <property name="autoRepeatDelay">
@@ -159,10 +158,6 @@ color: rgb(255, 255, 255);</string>
        </property>
        <item>
         <widget class="QLabel" name="label">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 0, 0);</string>
-         </property>
          <property name="text">
           <string>Balance:</string>
          </property>
@@ -173,11 +168,6 @@ background-color: rgb(0, 0, 0);</string>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 255, 0);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(108, 108, 108);</string>
-         </property>
          <property name="text">
           <string>123.456 BOC</string>
          </property>
@@ -187,6 +177,19 @@ background-color: rgb(108, 108, 108);</string>
         </widget>
        </item>
       </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
      </item>
      <item>
       <widget class="QPushButton" name="sendButton">
@@ -200,13 +203,15 @@ background-color: rgb(108, 108, 108);</string>
         <string>Confirm the send action</string>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(84, 84, 84);</string>
+        <string notr="true">background-color: rgb(84, 84, 84);
+color: #FFF;
+border-color: rgb(255, 255, 255) 2px;</string>
        </property>
        <property name="text">
         <string>S&amp;end</string>
        </property>
        <property name="icon">
-        <iconset resource="../Ocoin.qrc">
+        <iconset resource="../BountyCoin.qrc">
          <normaloff>:/icons/send</normaloff>:/icons/send</iconset>
        </property>
        <property name="default">
@@ -226,7 +231,7 @@ background-color: rgb(108, 108, 108);</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../Ocoin.qrc"/>
+  <include location="../BountyCoin.qrc"/>
  </resources>
  <connections/>
 </ui>
