@@ -1,4 +1,4 @@
 obj/version.o: version.cpp version.h clientversion.h \
-  /Users/adamandshandra/code/BountyCoin/src/obj/build.h
+ /home/r3wt/src/OSC/src/obj/build.h
 version.cpp version.h clientversion.h :
-  /Users/adamandshandra/code/BountyCoin/src/obj/build.h :
+ /home/r3wt/src/OSC/src/obj/build.h :
