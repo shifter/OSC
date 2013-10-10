@@ -45,6 +45,10 @@ border-color: rgb(255, 255, 255) 2px;</string>
        <property name="toolTip">
         <string>Enter a transaction comment  (MAX 256 Characters) (Note: this information is public)</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 255);</string>
+       </property>
       </widget>
      </item>
     </layout>
@@ -112,7 +116,7 @@ border-color: rgb(255, 255, 255) 2px;</string>
         <string>Add &amp;Recipient</string>
        </property>
        <property name="icon">
-        <iconset resource="../BountyCoin.qrc">
+        <iconset resource="../Ocoin.qrc">
          <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
        <property name="autoDefault">
@@ -140,7 +144,7 @@ border-color: rgb(255, 255, 255) 2px;</string>
         <string>Clear &amp;All</string>
        </property>
        <property name="icon">
-        <iconset resource="../BountyCoin.qrc">
+        <iconset resource="../Ocoin.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
        <property name="autoRepeatDelay">
@@ -211,7 +215,7 @@ border-color: rgb(255, 255, 255) 2px;</string>
         <string>S&amp;end</string>
        </property>
        <property name="icon">
-        <iconset resource="../BountyCoin.qrc">
+        <iconset resource="../Ocoin.qrc">
          <normaloff>:/icons/send</normaloff>:/icons/send</iconset>
        </property>
        <property name="default">
@@ -231,7 +235,7 @@ border-color: rgb(255, 255, 255) 2px;</string>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../BountyCoin.qrc"/>
+  <include location="../Ocoin.qrc"/>
  </resources>
  <connections/>
 </ui>

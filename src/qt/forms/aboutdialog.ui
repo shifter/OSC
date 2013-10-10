@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>623</width>
-    <height>367</height>
+    <height>363</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>10</x>
      <y>30</y>
      <width>631</width>
      <height>251</height>
@@ -32,7 +32,8 @@
     </sizepolicy>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(84, 84, 84);</string>
+    <string notr="true">background-color: rgb(84, 84, 84);
+</string>
    </property>
    <property name="pixmap">
     <pixmap resource="../Ocoin.qrc">:/images/about</pixmap>
