@@ -965,7 +965,7 @@ static const int64 nMinimumCoin = 0.0777 * COIN;
 	else if (nHeight == 77777) {nSubsidy = 10000 * COIN;}                                      // bonus reward
 	else if (nHeight > 77777 && nHeight < 128000) {nSubsidy = 4 * COIN;}                      // 4 coins
 	else if (nHeight > 128000 && nHeight < 256000) {nSubsidy = 20 * COIN;}                    // 20 coins
-	else if (nHeight > 256000 && nHeight < 400000) {nSubsidy = 25 * COIN;}                 // 25 coins
+	else if (nHeight > 256000) {nSubsidy = 25 * COIN;}                 // 25 coins
 	else if (nHeight > 2400000) {nSubsidy = 5 * COIN;}
 	else {nSubsidy = 1 * COIN;}              
 

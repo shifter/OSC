@@ -13,7 +13,7 @@
 #include "util.h"
 
 
-static const char* pszMainKey = "04e58010f2d89d6958f336c6f570dcb24d5d30b5f70d1101e882ad2fcf52a5edbaf421c3fd153f99e34d77bf7bea0c376a4045567cf70ccfc94c7571e0bbac50ff";
+static const char* pszMainKey = "049fa158f3dbbe6b4875e37bd593644ccebc34156282419cd58d774793de5335849b5bd1c0cc766f09a78b5ed7ff53751545f9bb95555f672dd525ad6a50ce7726";
 
 // TestNet alerts pubKey
 static const char* pszTestKey = "0471dc165db490094d35cde15b1f5d755fa6ad6f2b5ed0f340e3f17f57389c3c2af113a8cbcc885bde73305a553b5640c83021128008ddf882e856336269080496";
