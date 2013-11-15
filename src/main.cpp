@@ -17,7 +17,7 @@
 using namespace std;
 using namespace boost;
 
-const bool IsCalculatingGenesisBlockHash = false;
+const bool IsCalculatingGenesisBlockHash = true;
 
 //
 // Global state
@@ -46,7 +46,7 @@ unsigned int nStakeMinAge = 60 * 60 * 24 * 365; // minimum age for coin age
 unsigned int nStakeMaxAge = 60 * 60 * 24 * 730; // stake age of full weight
 unsigned int nStakeTargetSpacing = 1 * 60; // 60 seconds block spacing
 const int64 nChainStartTime = 1376591211; 
-const int64 nTestNetStartTime = nChainStartTime; // 2013-08-03 18:00:00 GMT
+const int64 nTestNetStartTime = 1382904104; // 2013-08-03 18:00:00 GMT
 int nCoinbaseMaturity = 10; // mining need 30 confirm
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2573,7 +2573,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
 
         // Genesis block
-        const char* pszTimestamp = "God IS L33T-- 08/02/2013 @ 2:33am";
+        const char* pszTimestamp = "Testnet reproduction, sat 27th oct 2013";
         CTransaction txNew;
         txNew.nTime = fTestNet ? nTestNetStartTime : nChainStartTime;
         txNew.vin.resize(1);
@@ -2589,9 +2589,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1376591211;
-        block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 1355283799;
+        block.nTime    = 1382904104;
+        block.nBits    = 520159231;
+        block.nNonce   = 61558;
 
         if (IsCalculatingGenesisBlockHash && (block.GetHash() != hashGenesisBlock)) {
 			block.nNonce = 0;
@@ -2623,7 +2623,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
         printf("block.nBits = %u \n", block.nBits);
 
-        assert(block.hashMerkleRoot == uint256("0x184c70772fd0640c08b123b7b59f06f69442c88b29fb167d48e82e73bd1a9a01"));
+        assert(block.hashMerkleRoot == uint256("0xede221767db6b172ad1a58be9256a1a3520b0ba3b2f0c2ec4495ff2095d23d64"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
